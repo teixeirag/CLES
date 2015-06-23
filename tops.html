@@ -8,6 +8,148 @@
 </head>
 
 <body>
+	<form method="post" action="https://www.paypal.com/cgi-bin/webscr" target="paypal" >
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="">
+<input type="hidden" name="item_name" value="Baseball Hat">
+<input type="hidden" name="item_number" value="123">
+<input type="hidden" name="amount" value="5.95">
+<input type="hidden" name="shipping" value="1.00">
+<input type="hidden" name="shipping2" value="0.50">
+<input type="hidden" name="handling" value="2.00">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="return" value="">
+<input type="hidden" name="undefined_quantity" value="1">
+<input type="image" src="http://www.paypalobjects.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" width="87" height="23" alt="Make payments with PayPal - it's fast, free and secure!">
+<input type="hidden" name="add" value="1">
+</form>
+
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="business" value="example@minicartjs.com">
+                    <input type="hidden" name="item_name" value="Unicorn">
+                    <input type="hidden" name="amount" value="2.00">
+                    <input type="hidden" name="discount_amount" value="1.00">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="hidden" name="return" value="http://www.minicartjs.com/?success">
+                    <input type="hidden" name="cancel_return" value="http://www.minicartjs.com/?cancel">
+                    <strong>Unicorn</strong>
+                    <ul>
+                        <li>Price $2.00</li>
+                        <li>Discounted $1.00</li>
+                    </ul>
+                    <input type="submit" name="submit" value="Add to cart" class="button">
+                </fieldset>
+            </form>
+
+            <div id="wrapper">
+        <header id="header"><h1 id="minicart.js">Minicart.js</h1><p><a href="https://travis-ci.org/jeffharrell/minicart"><img src="./Minicart.js - The minicart is a great way to improve your PayPal shopping cart integration_files/minicart.png" alt="Build Status"></a></p><p>The minicart is a great way to improve your PayPal shopping cart integration. One simple change and your users will be able to manage their shopping cart directly from your website. Additional APIs provide you the power to customize the behavior to your needs.</p><ol>
+<li><a href="http://minicartjs.com/#basic-setup">Basic Setup</a></li>
+<li><a href="http://minicartjs.com/#advanced-api">Advanced API</a></li>
+<li><a href="http://minicartjs.com/#api-examples">API Examples</a></li>
+<li><a href="http://minicartjs.com/#customization">Customization</a></li>
+<li><a href="http://minicartjs.com/#localization">Localization</a></li>
+<li><a href="http://minicartjs.com/#faq">FAQ</a></li>
+</ol></header>
+        <section id="example">
+            <p>Try it out with the example below.</p>
+
+        <div class="container">
+            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="business" value="example@minicartjs.com">
+                    <input type="hidden" name="item_name" value="Unicorn">
+                    <input type="hidden" name="amount" value="2.00">
+                    <input type="hidden" name="discount_amount" value="1.00">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="hidden" name="return" value="http://www.minicartjs.com/?success">
+                    <input type="hidden" name="cancel_return" value="http://www.minicartjs.com/?cancel">
+                    <strong>Unicorn</strong>
+                    <ul>
+                        <li>Price $2.00</li>
+                        <li>Discounted $1.00</li>
+                    </ul>
+                    <input type="submit" name="submit" value="Add to cart" class="button">
+                </fieldset>
+            </form>
+
+            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="business" value="example@minicartjs.com">
+                    <input type="hidden" name="item_name" value="Rainbow">
+                    <input type="hidden" name="item_number" value="ROYGBIV">
+                    <input type="hidden" name="amount" value="2.00">
+                    <input type="hidden" name="quantity" value="1">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="hidden" name="return" value="http://www.minicartjs.com/?success">
+                    <input type="hidden" name="cancel_return" value="http://www.minicartjs.com/?cancel">
+                    <strong>Rainbow</strong>
+                    <ul>
+                        <li>#ROYGBIV</li>
+                        <li>Price $2.00</li>
+                    </ul>
+                    <input type="submit" name="submit" value="Add to cart" class="button">
+                </fieldset>
+            </form>
+
+            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="business" value="example@minicartjs.com">
+                    <input type="hidden" name="item_name" value="Pony">
+                    <input type="hidden" name="quantity" value="1">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="hidden" name="return" value="http://www.minicartjs.com/?success">
+                    <input type="hidden" name="cancel_return" value="http://www.minicartjs.com/?cancel">
+                    <strong>Pony</strong>
+                    <ul>
+                        <li>
+                            <label>
+                                <select name="os0">
+                                    <option value="Stripes">Stripes $3.00</option>
+                                    <option value="Spots">Spots $4.00</option>
+                                    <option value="Psychedelic">Psychedelic $5.00</option>
+                                </select>
+                            </label>
+                            <input type="hidden" name="on0" value="Type">
+                            <input type="hidden" name="option_select0" value="Stripes">
+                            <input type="hidden" name="option_amount0" value="3.00">
+                            <input type="hidden" name="option_select1" value="Spots">
+                            <input type="hidden" name="option_amount1" value="4.00">
+                            <input type="hidden" name="option_select2" value="Psychedelic">
+                            <input type="hidden" name="option_amount2" value="5.00">
+                        </li>
+                    </ul>
+                    <input type="submit" name="submit" value="Add to cart" class="button">
+                </fieldset>
+            </form>
+
+            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" class="last">
+                <fieldset>
+                    <input type="hidden" name="business" value="example@minicartjs.com">
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="display" value="1">
+                    <input type="submit" name="submit" value="View your cart" class="button">
+                </fieldset>
+            </form>
+        </div>
+
+    </section>
+    <section id="readme">
+        
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/minicart/3.0.6/minicart.min.js"></script>
+<script>
+    paypal.minicart.render();
+</script>
 </body>
 
 </html>
