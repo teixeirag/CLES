@@ -1,13 +1,246 @@
 <!DOCTYPE>
 <html>
 <head>
-	<title>CLES - Shorts</title>
+	<title>CLES - PANTS</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="example-lightbox.js"></script>
+	<script src="CLES.js"></script>
 	<link type="text/css" rel="stylesheet" href="cles.css" />
+    <style type="text/css">
+
+        .nav {
+            background-image: url("sunNav.png");
+            position: fixed;
+            height: 20%;
+            width: 100%;
+            margin-left: -10px;
+            margin-top: -10px;
+        }
+
+        nav ol li {
+            font-family: Courier;
+            display: inline-block;
+            margin: 40px 110px 200px 110px;
+        }
+
+        footer {
+            font-family: Courier;
+            text-align: center;
+            position: absolute;
+            bottom: -500px;
+            right: 0px;
+            background-color: #94DBFF;
+            width: 100%;
+            height: 10%;
+            margin-bottom: 0px;
+            margin-top: -500px; 
+        }
+
+        .img {
+            width: 200px;
+            height: 350px;
+        }
+
+        .form {
+            position: relative;
+            width: 20%;
+            float: left;
+            margin-top: 250px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: -500px;
+            z-index: -1;
+        }
+
+        .form img {
+            height: 300px;
+            width: 200px;
+        }
+        
+    </style>
 </head>
 
 <body>
+<body background="sand.jpg">
+    <nav class="nav">
+        <ol>
+            <li class="home">
+                <button type="home.html"><p>HOME</p></button>
+            </li>
+
+            <li class="tops">
+                <button type="tops.html"><p>TOPS</p></button>
+            </li>
+
+            <li class="pants">
+                <button type="shorts.html"><p>BOTTOMS</p></button>               
+            </li>
+
+            <li class="cart">
+                <button type="cart.html"><p>CART</p></button>
+            </li>
+        </ol>
+    </nav>
+
+</ol>
+
+<div class="form">
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+    <fieldset>
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="business" value="example@minicartjs.com">
+        <input type="hidden" name="item_name" value="Pony">
+        <input type="hidden" name="quantity" value="1">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="return" value="http://www.minicartjs.com/?success">
+        <input type="hidden" name="cancel_return" value="http://www.minicartjs.com/?cancel">
+        <strong>Shorts 1</strong>
+        <img src="shorts-1.jpg">
+        <ul>
+            <li>
+                <label>
+                    <select name="os0">
+                        <option value="Small">Small - $100.00</option>
+                        <option value="Medium">Medium - $100.00</option>
+                        <option value="Large">Large - $100.00</option>
+                        <option value="XL">XL - $100.00</option>
+                    </select>
+                </label>
+                <input type="hidden" name="on0" value="Type">
+                <input type="hidden" name="option_select0" value="Stripes">
+                <input type="hidden" name="option_amount0" value="3.00">
+                <input type="hidden" name="option_select1" value="Spots">
+                <input type="hidden" name="option_amount1" value="4.00">
+                <input type="hidden" name="option_select2" value="Psychedelic">
+                <input type="hidden" name="option_amount2" value="5.00">
+            </li>
+        </ul>
+        <input type="submit" name="submit" value="Add to cart" class="button">
+    </fieldset>
+</form>
+</div>
+
+<div class="form">
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+    <fieldset>
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="business" value="example@minicartjs.com">
+        <input type="hidden" name="item_name" value="Pony">
+        <input type="hidden" name="quantity" value="1">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="return" value="http://www.minicartjs.com/?success">
+        <input type="hidden" name="cancel_return" value="http://www.minicartjs.com/?cancel">
+        <strong>Shorts 2</strong>
+        <img src="shorts-2.jpg">
+        <ul>
+            <li>
+                <label>
+                    <select name="os0">
+                        <option value="Small">Small - $100.00</option>
+                        <option value="Medium">Medium - $100.00</option>
+                        <option value="Large">Large - $100.00</option>
+                        <option value="XL">XL - $100.00</option>
+                    </select>
+                </label>
+                <input type="hidden" name="on0" value="Type">
+                <input type="hidden" name="option_select0" value="Stripes">
+                <input type="hidden" name="option_amount0" value="3.00">
+                <input type="hidden" name="option_select1" value="Spots">
+                <input type="hidden" name="option_amount1" value="4.00">
+                <input type="hidden" name="option_select2" value="Psychedelic">
+                <input type="hidden" name="option_amount2" value="5.00">
+            </li>
+        </ul>
+        <input type="submit" name="submit" value="Add to cart" class="button">
+    </fieldset>
+</form>
+</div>
+
+<div class="form">
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+    <fieldset>
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="business" value="example@minicartjs.com">
+        <input type="hidden" name="item_name" value="Pony">
+        <input type="hidden" name="quantity" value="1">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="return" value="http://www.minicartjs.com/?success">
+        <input type="hidden" name="cancel_return" value="http://www.minicartjs.com/?cancel">
+        <strong>Skirt 1</strong>
+        <img src="shorts-3.jpg">
+        <ul>
+            <li>
+                <label>
+                    <select name="os0">
+                        <option value="Small">Small - $100.00</option>
+                        <option value="Medium">Medium - $100.00</option>
+                        <option value="Large">Large - $100.00</option>
+                        <option value="XL">XL - $100.00</option>
+                    </select>
+                </label>
+                <input type="hidden" name="on0" value="Type">
+                <input type="hidden" name="option_select0" value="Stripes">
+                <input type="hidden" name="option_amount0" value="3.00">
+                <input type="hidden" name="option_select1" value="Spots">
+                <input type="hidden" name="option_amount1" value="4.00">
+                <input type="hidden" name="option_select2" value="Psychedelic">
+                <input type="hidden" name="option_amount2" value="5.00">
+            </li>
+        </ul>
+        <input type="submit" name="submit" value="Add to cart" class="button">
+    </fieldset>
+</form>
+</div>
+
+<div class="form">
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+    <fieldset>
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="business" value="example@minicartjs.com">
+        <input type="hidden" name="item_name" value="Pony">
+        <input type="hidden" name="quantity" value="1">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="return" value="http://www.minicartjs.com/?success">
+        <input type="hidden" name="cancel_return" value="http://www.minicartjs.com/?cancel">
+        <strong>Skirt 4</strong>
+        <img src="shorts-4.jpg">
+        <ul>
+            <li>
+                <label>
+                    <select name="os0">
+                        <option value="Small">Small - $100.00</option>
+                        <option value="Medium">Medium - $100.00</option>
+                        <option value="Large">Large - $100.00</option>
+                        <option value="XL">XL - $100.00</option>
+                    </select>
+                </label>
+                <input type="hidden" name="on0" value="Type">
+                <input type="hidden" name="option_select0" value="Stripes">
+                <input type="hidden" name="option_amount0" value="3.00">
+                <input type="hidden" name="option_select1" value="Spots">
+                <input type="hidden" name="option_amount1" value="4.00">
+                <input type="hidden" name="option_select2" value="Psychedelic">
+                <input type="hidden" name="option_amount2" value="5.00">
+            </li>
+        </ul>
+        <input type="submit" name="submit" value="Add to cart" class="button">
+    </fieldset>
+</form>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/minicart/3.0.6/minicart.min.js"></script>
+
+<script>
+    paypal.minicart.render();
+</script>
+
+<footer>
+    <p>CLES - 2015</p>
+</footer>
+
 </body>
 
 </html>
