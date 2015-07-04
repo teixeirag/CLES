@@ -1,0 +1,175 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>CLES - CART</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="example-lightbox.js"></script>
+		<link type="text/css" rel="stylesheet" href="cles.css" />
+		<style>
+			.nav {
+	            background-color:#24262d;     
+	            position: fixed;
+	            height: 65px;
+	            width: 101%;
+	            margin-left: -10px;
+	            margin-top: -10px;
+	            z-index: 2;
+	            }
+
+	            nav ol li {
+
+	                position: relative;
+	                left: 250px;
+	                top: -16px;
+	                font-family: Arial;
+	                display: inline-block;
+	                margin-left: 50px;
+
+	            }
+	            /*Nav Buttons*/
+	            a { 
+	                position: relative;
+	                left: 400px;
+	                top: -25px;
+	                background-color: transparent;
+	                color: white;
+	                font-family: helvetica;
+	                font-weight: bold;
+	                font-size: 21px;
+	                border: 1px solid transparent;
+	            }
+
+	            .transpa-Shirt {
+	                position: relative;
+	                left: 10px;
+	                top: 10px;
+	                width: 50px;
+	                height: 50px;
+	                margin: 0;
+	            }
+
+	            .cles-nav-text {
+	                position: absolute;
+	                top:-25px;
+	                left: 75px;
+	                color: white;
+	                font-weight: bold;
+	                font-size: 40px;
+	                font-family: Helvetica;
+	            }
+
+				footer {
+		                font-family: Courier;
+		                text-align: center;
+		                position: absolute;
+		                top: 800px;
+		                right: 0px;
+		                background-color: #24262d;
+		                width: 100%;
+		                height: 10%;
+		                margin-bottom: 0px;
+		                color: white;               
+		            }
+
+		          form {
+					width: 400px;
+					height: 500px;
+					text-align: center;
+					position:relative;
+					top:90px;
+					bottom:-80px;
+					left: 410px;		
+					margin: 0px 0px 100px 0px;
+					background-color: #24262d;
+					border: 5px solid black;
+					color: white;
+					
+					}
+
+				.hi {
+				background-color: #0066A2;
+				border-style: outset;
+				height: 50px;
+				width: 100px;
+				border: 2px solid white;
+				font: bold 15px arial , Helvetica;
+				position: relative;
+				top:10px;
+					}
+
+				::-webkit-input-placeholder {
+					font-size: 20px;
+					width: 50px;
+					height: 50px;
+   color: red;
+
+
+}
+				
+				:webkit-input-placeholder;{
+					font-size: 20px;
+				}
+
+
+
+				input  {
+					width: 200px;
+					height: 200px;
+				}
+
+		</style>
+</head>
+
+	<body background="sand.jpg">
+		<nav class="nav">
+	            <p class="cles-nav-text">CLES</p>
+	            <img src="shirt.png" class="transpa-Shirt">
+	            <ol>
+	                <li class="home">
+
+	                    <a href="home.html">HOME</a>
+	                </li>
+
+	                <li class="tops">
+	                    <a href="tops.html">TOPS</a>
+	                </li>
+
+	                <li class="shorts">
+	                    <a href="shorts.html">BOTTOMS</a>               
+	                </li>
+
+	                <li class="cart">
+	                    <a href="home.html">FEEDBACK</a>
+	                </li>
+	            </ol>
+	        </nav>
+
+	        <div class="one">
+			<form>
+				<h3>Tell us how we did!</h3>
+				
+				
+				
+				<input type="text" name="feedback" class="input" placeholder="Feedback" class="feedback">
+				<br>
+				
+				<input type="submit" value="Submit" class="hi">
+			</form>
+	    </div>
+
+
+	    <footer>
+				<p>CLES - 2015</p>
+		</footer>
+
+		<script>
+    		$(document).ready(function(){
+    			$(".hi").click(function(){
+    				alert("Thanks, we really appreciate your feedback!");
+    			});
+    		});
+		</script>
+		
+</body>
+
+</html>

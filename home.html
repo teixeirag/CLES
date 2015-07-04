@@ -10,7 +10,6 @@
 		.nav {
             background-color:#24262d;     
             position: fixed;
-            top: 0px;
             height: 65px;
             width: 101%;
             margin-left: -10px;
@@ -20,7 +19,7 @@
             nav ol li {
 
                 position: relative;
-                left: 300px;
+                left: 250px;
                 top: -16px;
                 font-family: Arial;
                 display: inline-block;
@@ -49,9 +48,9 @@
                 margin: 0;
             }
 
-            .cles {
+            .cles-nav-text {
                 position: absolute;
-                top:-30px;
+                top:-25px;
                 left: 75px;
                 color: white;
                 font-weight: bold;
@@ -60,13 +59,20 @@
             }
 		
 		.logo {
-			margin-left: 30px;
-			position: absolute;
+			
+			position: relative;
+			top:40px;
+			width: 16%;
+			left: 500px;
+			margin-right: 4px;
+			color: white;
+			background-color: #24262d;
+			height: 100px;
 			text-align: left;
 			font-family: Courier;
-			margin-top: 17%;
-			font-size: 70px;
+			font-size: 40px;
 			text-decoration: underline;
+			z-index: -1;
 		}
 
 		footer {
@@ -75,7 +81,7 @@
                 position: absolute;
                 top: 800px;
                 right: 0px;
-                background-color: #1c1d25;
+                background-color: #24262d;
                 width: 100%;
                 height: 10%;
                 margin-bottom: 0px;
@@ -85,23 +91,25 @@
 		.Intro {
 			font-family: Courier;
 			position: relative;
-			top: 275px;
-			left: 601px;
-			background-color: #94DBFF;
+			top: 5px;
+			left: 551px;
+			background-color: #1c1d25;
 			width: 280px;
 			height: 275px;
 			bottom: 300px;
 			z-index: -1;
+			color: white;
 		}
 
-		.cles img {
+		.cless-face-image {
 			width: 200px;
 			height: 275px;
 			position: relative;
 			bottom: 300px;
-			left: 400px;
-			top: 400px;
+			left: 350px;
+			top: -270px;
 			z-index: -1;
+			border: 1px solid black;
 		}
 
 		section{
@@ -114,7 +122,7 @@
 <body>
 <body background="sand.jpg">
 	<nav class="nav">
-            <p class="cles">CLES</p>
+            <p class="cles-nav-text">CLES</p>
             <img src="shirt.png" class="transpa-Shirt">
             <ol>
                 <li class="home">
@@ -131,7 +139,7 @@
                 </li>
 
                 <li class="cart">
-                    <a href="home.html">CART</a>
+                    <a href="home.html">FEEDBACK</a>
                 </li>
             </ol>
         </nav>
@@ -146,9 +154,9 @@
 		<h5>Introduced in 2015, <u>CLES</u> is a premier contemporary alohawear line designed by Cleston Teixeira, who developed the brand with the meshing of old and new Hawaiian Island living in mind. Channel the legendary Duke Kahanamoku while relaxing on Waikiki Beach in our bold buttondown Aloha Shirts in between surf sets. Or, wear one of our modern V-Neck pocket tees while going "holo holo" around Oahu. Either way, <u>CLES</u> is sure to be reflective of your unique style. To view our Men's and Women's offerings of "New Classics," <i>hele</i> (Native Hawaiian for "go") on over to the Tops and Shorts pages.</h5>
 	</div>
 
-	<div class="cles">
-		<img src="bio-pic.jpg">
-	</div>
+	
+		<img src="bio-pic.jpg" class="cless-face-image">
+	
 	</section>
 
 	<footer>
