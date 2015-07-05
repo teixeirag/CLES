@@ -5,7 +5,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="CLES.js"></script>
 	<link type="text/css" rel="stylesheet" href="cles.css" />
-    <link href="css/hover.css" rel="stylesheet" media="all">
 	<style type="text/css">
 
 		.nav {
@@ -116,6 +115,14 @@
 		section{
 			margin-top: 100px;
 		}
+
+        .nav ul {
+            padding: 0;
+            list-style-type: none;
+            float: left;
+        }
+
+        
 		
 	</style>
 </head>
@@ -127,20 +134,19 @@
             <img src="shirt.png" class="transpa-Shirt">
             <ol>
                 <li class="home">
-
-                    <a href="1-home.html">HOME</a>
+                    <a href="1-home.html">HOME</a>     
                 </li>
 
                 <li class="tops">
-                    <a href="2-tops.html">TOPS</a>
+                    <a href="2-tops.html">TOPS</a>     
                 </li>
 
                 <li class="shorts">
-                    <a href="3-shorts.html">BOTTOMS</a>               
+                    <a href="3-shorts.html">BOTTOMS</a>                    
                 </li>
 
                 <li class="feedback">
-                    <a href="4-feedback.html">FEEDBACK</a>
+                    <a href="4-feedback.html">FEEDBACK</a>     
                 </li>
             </ol>
         </nav>
@@ -159,15 +165,21 @@
 		<img src="bio-pic.jpg" class="cless-face-image">
 	
 	<script>
-       $(document).ready(function(){
-        $(".home").mouseenter(function(){
-            $(".home").css("background-color", "yellow")
+        $(document).ready(function(){
+            $(".cles-nav-text").mouseenter(function(){
+                $(".cles-nav-text").css("background-color", "lightblue")
+            });
+             $(".cles-nav-text").mouseleave(function(){
+                $(".cles-nav-text").css("background-color", "transparent")
+            });
 
-        });
-         $("p").mouseleave(function(){
-        $("p").css("background-color", "lightgray");
-       });
+             });
+
     </script>
+
+    
+
+    
 
 	<footer>
 			<p>CLES - 2015</p>
