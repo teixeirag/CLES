@@ -1,0 +1,6 @@
+Hey Ms.Shirmung,
+
+The contributors of this business site are:
+
+Gareth: Created the navigation bars, footers, and provided images.
+Kenny:	integrated paypal with the tops.html and shorts.html pages.
